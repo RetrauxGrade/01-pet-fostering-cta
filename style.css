@@ -1,0 +1,125 @@
+/* Set a modern, easy-to-read font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #e6f7fa; /* light teal background for calmness */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the CTA banner section */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg'); /* set background image */
+  background-size: cover; /* make image cover the banner */
+  background-position: center; /* center the image */
+  position: relative; /* for overlay positioning */
+  /* Overlay using a dark semi-transparent background color */
+  background-color: rgba(20, 40, 60, 0.7); /* nearly black overlay for the image */
+  background-blend-mode: darken; /* blend overlay and image */
+  color: #ffffff; /* revert text color to white */
+  padding: 60px 20px 80px 20px; /* less space above heading, still tall */
+  text-align: center;
+  border-radius: 0 0 30px 30px; /* soft, inviting corners at the bottom */
+  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.15); /* subtle shadow for depth */
+}
+
+/* Main heading style */
+.cta-banner h1 {
+  font-size: 3.5em;
+  margin-bottom: 32px; /* increased space below heading */
+  letter-spacing: 1px;
+  color: #ffffff; /* revert heading color to white */
+}
+
+/* Description style */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 40px; /* increased space below description */
+  color: #ffffff; /* revert description color to white */
+}
+
+/* Call-to-action button style */
+.cta-button {
+  display: inline-block;
+  background-color: #00bfae; /* bright teal for attention */
+  color: #ffffff; /* keep button text white for contrast */
+  padding: 16px 36px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 191, 174, 0.15);
+  transition: background 0.2s;
+}
+
+/* Button hover effect for interactivity */
+.cta-button:hover {
+  background-color: #009e90;
+}
+
+/* Simple site header style */
+.site-header {
+  background-color: #1565c0; /* darker blue for contrast */
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0;
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+/* Info section with two columns */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(30, 136, 229, 0.08);
+  overflow: hidden;
+  border: 3px solid #000000; /* thick black outline around the card */
+}
+
+.info-image {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+
+.info-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.info-text {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 32px 24px;
+  color: #14375a;
+}
+
+.info-text h3 {
+  margin-top: 0;
+  color: #1e88e5;
+}
+
+/* Clear floats after the columns */
+.info-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer p{
+  margin: 0; /* reset margin for footer text */
+  padding: 12px 0;
+  font-size: 0.9em;
+  color: #000000;
+  background-color: #1565c0; /* darker blue for contrast */
+  border-top: 3px solid #000000; /* thick black line at the top */
+  text-align: center;
+  padding: 18px 0;
+}
